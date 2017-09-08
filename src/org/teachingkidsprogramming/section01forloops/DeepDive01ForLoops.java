@@ -75,7 +75,7 @@ public class DeepDive01ForLoops
   public void assigningVariables() throws Exception
   {
     int myFavoriteNumber = 101;
-    Assert.assertEquals(myFavoriteNumber, ____);
+    Assert.assertEquals(myFavoriteNumber, "101");
   }
   @Test
   public void combiningNumbers() throws Exception
@@ -93,7 +93,7 @@ public class DeepDive01ForLoops
   public void combiningTextAndNumbers() throws Exception
   {
     String name = "Henry The " + 8;
-    Assert.assertEquals(name, ___);
+    Assert.assertEquals(name, "Henry The 8");
   }
   @Test
   public void textIsTextEvenWhenItsNumbers() throws Exception
@@ -109,7 +109,7 @@ public class DeepDive01ForLoops
     {
       sound += "H";
     }
-    Assert.assertEquals(sound, ___);
+    Assert.assertEquals(sound, "AHH");
   }
   @Test
   public void forLoopsEndAtTheEnd() throws Exception
@@ -175,7 +175,7 @@ public class DeepDive01ForLoops
     {
       sound += "H";
     }
-    Assert.assertEquals(sound, ___);
+    Assert.assertEquals(sound, "AHHHHHHHHHHHH");
   }
   /**
    * Ignore the following, it's needed to run the deep dive
