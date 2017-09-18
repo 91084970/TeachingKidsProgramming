@@ -23,7 +23,7 @@ public class Houses2
     //Change the pen color of the line the tortoise draws to lightGray --#15
     Tortoise.setPenColor(Reds.Red);
     Tortoise.move(height);
-    //drawflatroof();  
+    //draw flat roof();  
     Tortoise.turn(45);
     Tortoise.move(15);
     Tortoise.turn(90);
@@ -33,7 +33,7 @@ public class Houses2
   private static void drawflatroof()
   {
     Tortoise.turn(90);
-    Tortoise.move(30);
+    Tortoise.move(15);
     Tortoise.turn(90);
   }
   private static int height()
