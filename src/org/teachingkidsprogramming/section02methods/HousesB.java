@@ -23,10 +23,10 @@ public class HousesB
     //drawHouseSlantedRoof(50)
   }
   //define a method called drawSlantedRoof
+  private static void drawHouseSlantedRoof(int height)
+  
   
   //define a method called drawSlanetedRoof
-  
-    
   private static void drawHousePointyRoof(int height)
   {
     Tortoise.setPenColor(Reds.Red);
@@ -36,13 +36,7 @@ public class HousesB
     Tortoise.turn(-90);
     Tortoise.move(20);
     Tortoise.turn(-90);
-  }
-  
-  Tortoise.turn(45);
-  Tortoise.move(15);
-  Tortoise.turn(90);
-  Tortoise.move(15);
-  Tortoise.turn(45);
+  }Tortoise.turn(45);Tortoise.move(15);Tortoise.turn(90);Tortoise.move(15);Tortoise.turn(45);
   private static void drawHouseFlatRoof()
   {
     Tortoise.turn(90);
