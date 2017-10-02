@@ -1,11 +1,12 @@
 package org.teachingkidsprogramming.section03ifs;
 
 import java.util.Random;
+// this variation tells user how many guesses they have left
 
 import org.teachingextensions.logo.Sound;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
-public class HiLow
+public class HiLow2
 {
   public static void main(String[] args)
   {
