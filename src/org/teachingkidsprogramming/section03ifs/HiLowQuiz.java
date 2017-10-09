@@ -10,15 +10,24 @@ public class HiLowQuiz extends org.teachingkidsprogramming.recipes.quizzes.grade
   public void question1()
   {
     //  If the Y position of the tortoise is 115
-    Tortoise.setY(115);
-    Tortoise.turn(63);
+    if (Tortoise.getY() == 115)
+    {
+      Tortoise.turn(63);
+    }
     //  Turn the tortoise to the right 63 degrees 
   }
   @Override
   public void question2()
   {
     //  If the X position of tortoise is less than Y position of tortoise
-    Tortoise.turn(-54);
+    if (Tortoise.getX() < Tortoise.getY())
+    {
+      Tortoise.turn(-54);
+    }
+    else
+    {
+      Tortoise.turn(22);
+    }
     //  Turn the tortoise 54 degrees to the left
     //  Otherwise turn the tortoise 22 degrees to the right
   }
@@ -32,7 +41,10 @@ public class HiLowQuiz extends org.teachingkidsprogramming.recipes.quizzes.grade
   public void question4()
   {
     //  If the Y position of tortoise is greater than 50
-    Tortoise.turn(-117);
+    if (Tortoise.getY() > 50)
+    {
+      Tortoise.turn(-177);
+    }
     //  Turn the tortoise 177 degrees to the left
   }
   public static void main(String[] args)
