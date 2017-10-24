@@ -24,7 +24,6 @@ public class ChooseYourOwnAdventure2
     }
     else if ("explore".equalsIgnoreCase(action))
     {
-      //      approachOoze (recipe below) --#4.1
       approachOoze();
     }
     else
@@ -49,15 +48,14 @@ public class ChooseYourOwnAdventure2
     //               Tell the user "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste." --#10
     //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
     //               If they answer "yes" --#13.1
-    if ( condition)
+    if (condition)
     {
     
-      MessageBox.showMessage('Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");  
+      MessageBox.showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");  
       
     }
     //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
     //               Otherwise, if they answer "heck yes" --#13.2
-    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
     
     MessageBox.showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");
     //               Otherwise, if they answer anything else --#13.3
@@ -68,15 +66,21 @@ public class ChooseYourOwnAdventure2
    //            ------------- Recipe for pourIntoBackyard --#19.2
    MessageBox.showMessage("As you walk into the backyard a net scoops you up and a giant takes you to a boiling pot of water.");
    MessageBox.askForTextInput("As the man starts to prepare you as soup, do you...'Scream' or 'Faint'?");
-   //                If they answer "faint" --#20.1
+   if ( answer.equelsIgnoreCase("faint")) {
+     
+   }
     //                        Tell the user "You made a delicious soup! Yum! The end." --#21
-    //                Otherwise, if they answer "scream" --#20.2
+   else if( answer.equelsIgnoreCase("scream")) {
+     
+   
     //                    startStory --#22
+   }
     //                Otherwise, if they answer anything else --#20.3
+   else if (answer.equelsIgnoreCase("Scream"))
     //                    endStory --#23
     //         ------------- End of pourIntoBackyard recipe --#19.3
     //         Otherwise, if they answer anything else --#8.3
-    //            endStory --#9
+     
     //      ------------- End of approachOoze recipe --#4.3
   }
   private static void wakeup()
