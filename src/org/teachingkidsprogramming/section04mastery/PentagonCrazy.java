@@ -8,6 +8,7 @@ public class PentagonCrazy
   {
     Tortoise.show();
     //    Make the tortoise move as fast as possible --#3
+    Tortoise.setSpeed(10);
     //    createColorPalette (recipe below) --#8.1
     //
     //    ------------- Recipe for createColorPalette --#8.2
@@ -34,6 +35,7 @@ public class PentagonCrazy
     //        The current length of a side is the same as the number of the side you are about to draw ( 1st side = 1 pixel, 2nd side = 2 pixels, etc) --#4.2
     //        Move the tortoise the length of a side --#4.1
     //        Turn the tortoise 1/5th of 360 degrees --#1
+    Tortoise.turn(360 / 5);
     //        Turn the tortoise 1 more degree --#5
     //    End Repeat --#2.2
     //    ------------- End of drawPentagon recipe --#10.3
