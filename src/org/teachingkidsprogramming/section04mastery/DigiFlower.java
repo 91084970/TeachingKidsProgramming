@@ -13,12 +13,10 @@ public class DigiFlower
     Tortoise.show();
     Tortoise.setSpeed(10);
     Tortoise.getBackgroundWindow().setBackground(PenColors.Grays.Silver);
-    //    Make the line the tortoise draws 3 pixels wide --#15
     //        Do the following 15 times --#13.1
     for (int i = 0; i < 15; i++)
       createColorPalette();
     drawOctogon();
-    //        End Repeat --#14.2
     Tortoise.turn(360 / 15);
   }
   private static void drawOctogon()
