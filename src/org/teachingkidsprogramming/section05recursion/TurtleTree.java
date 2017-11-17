@@ -12,9 +12,9 @@ public class TurtleTree
   public static void main(String[] args)
   {
     Tortoise.show();
-    //    Make the tortoise go as fast as possible --#10
     Tortoise.setSpeed(10);
     //    Turn the background black  --#21
+    Tortoise.getBackgroundWindow(PenColors.Grays.Black);
     int length = 60;
     drawBranch(length);
   }
@@ -23,7 +23,12 @@ public class TurtleTree
     System.out.println("the length is:" + length + "\n");
     if (length > 0)
     {
-  private static void adjustColor()
+      adjustColor(length);
+      Tortoise.move(length);
+      drawLowerBranches(length);
+    }
+  }
+  private static void adjustColor(Object length)
   {
     HashMap<Integer, Color> colors = new HashMap<Integer, Color>();
     colors.put(10, PenColors.Greens.Lime);
@@ -33,6 +38,7 @@ public class TurtleTree
     colors.put(50, PenColors.Browns.Sienna);
     colors.put(60, PenColors.Browns.SaddleBrown);
     //            Get the value of the branch length from the 'colors' HashMap and use that to set the pen color --#21
+    Tortoise.setPenColor(colors.get(length));
   }
   private static void drawLowerBranches(int length)
   {
