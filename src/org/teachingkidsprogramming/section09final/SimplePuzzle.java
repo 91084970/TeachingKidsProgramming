@@ -7,9 +7,11 @@ import java.util.Random;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import org.teachingextensions.logo.utils.PuzzleUtils.AStarPlayer;
 import org.teachingextensions.logo.utils.PuzzleUtils.Puzzle;
 import org.teachingextensions.logo.utils.PuzzleUtils.PuzzleAnimation;
 import org.teachingextensions.logo.utils.PuzzleUtils.PuzzleBoard;
+import org.teachingextensions.logo.utils.PuzzleUtils.PuzzlePlayer;
 import org.teachingextensions.logo.utils.PuzzleUtils.PuzzleState;
 
 public class SimplePuzzle implements Runnable
@@ -49,7 +51,9 @@ public class SimplePuzzle implements Runnable
     //          Create an array of integers named 'shuffled' which shuffles the cell array --#2.1
     //          Run the new puzzle (uses the cells array), Then update it to use the shuffled array --#2.2 
     //
-    puzzle = new Puzzle(cells);
+    int[] shuffled = shuffled(cells);
+    puzzle = new Puzzle(shuffled);
+    PuzzlePlayer player = new AStarPlayer(puzzle);
     //            
     //          Create a new AStarPlayer named player (of type PuzzlePlayer) which uses the current puzzle -- #3.1
     //          NOTE for teacher - have kids run it multiple times here to see that sometimes it fails

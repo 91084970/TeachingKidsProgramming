@@ -38,7 +38,7 @@ public class DeepDive05Recursion
   {
     HashMap<Integer, Color> colors = new HashMap<Integer, Color>();
     colors.put(10, PenColors.Greens.Lime);
-    colors.put(____, PenColors.Greens.DarkGreen);
+    colors.put(20, PenColors.Greens.DarkGreen);
     Assert.assertEquals(PenColors.Greens.DarkGreen, colors.get(20));
   }
   @Test
@@ -47,7 +47,7 @@ public class DeepDive05Recursion
     HashMap<Integer, Color> colors = new HashMap<Integer, Color>();
     colors.put(20, PenColors.Greens.DarkGreen);
     colors.put(30, PenColors.Greens.Green);
-    Assert.assertEquals(PenColors.Greens.Green, colors.get(___));
+    Assert.assertEquals(PenColors.Greens.Green, colors.get());
   }
   @Test
   public void findTheColorForTheBananaKey() throws Exception
@@ -55,7 +55,7 @@ public class DeepDive05Recursion
     HashMap<String, Color> colors = new HashMap<String, Color>();
     colors.put("banana", PenColors.Yellows.Yellow);
     colors.put("apple", PenColors.Reds.Red);
-    Assert.assertEquals(_______, colors.get("banana"));
+    Assert.assertEquals(PenColors.Yellows.Yellow, colors.get("banana"));
   }
   @Test
   public void findTheNumberPositionOfTheWorld() throws Exception
@@ -75,33 +75,33 @@ public class DeepDive05Recursion
   public void whatIsLastNow() throws Exception
   {
     List<String> messages = Arrays.asList("Hello", "World!", "How", "Are", "You");
-    messages.set(4, ___);
+    messages.set(3, 4);
     String result = messages.get(4);
     Assert.assertEquals("The rest of them", result);
   }
   @Test
   public void putAQuarterAtTheEnd() throws Exception
   {
-    int[] coins = {1, 5, 10, ____};
+    int[] coins = {1, 5, 10, 25};
     Assert.assertEquals(25, coins[3]);
   }
   @Test
   public void getThirdCoin() throws Exception
   {
     int[] coins = {1, 5, 10, 25};
-    Assert.assertEquals(10, coins[____]);
+    Assert.assertEquals(10, coins[2]);
   }
   @Test
   public void whichCoinIsSecond() throws Exception
   {
     int[] coins = {1, 5, 10, 25};
-    Assert.assertEquals(____, coins[1]);
+    Assert.assertEquals(5, coins[1]);
   }
   @Test
   public void putAFiftyCentPieceFirst() throws Exception
   {
     int[] coins = {1, 5, 10, 25};
-    coins[0] = ____;
+    coins[0] = 50;
     Assert.assertEquals(50, coins[0]);
   }
   /**

@@ -1,6 +1,7 @@
 package org.teachingkidsprogramming.section07objects;
 
 import org.teachingextensions.WindowUtils.MultiTurtleWindow;
+import org.teachingextensions.logo.Turtle;
 
 public class SuperTurtles
 {
@@ -15,13 +16,7 @@ public class SuperTurtles
   }
   private void showSomeTurtles()
   {
-    //  makeSpeedyTurtle (recipe below) --#2.0
-    //  ------------- Recipe for makeSpeedyTurtle --#1.0
-    //        Create a new speedyTurtle instance  
-    //        Add your speedyTurtle to your MultiTurtleWindow
-    //        Set the speed of your speedyTurtle to the fastest possible    
-    //        Have your speedyTurtle draw a triangle with 100 pixel sides
-    //  ------------- End of makeSpeedyTurtle --#1.1 
+    makeSpeedyTurtle();
     //  makeSlowTurtle (recipe below) --#4.0
     //  ------------- Recipe for makeSlowTurtle --#3.0
     //        Create a new slowTurtle instance 
@@ -34,5 +29,12 @@ public class SuperTurtles
     //        Add your crazyTurtle to your MultiTurtleWindow
     //        Have your crazyTurtle draw a 55 pixel long lightning bolt
     //  ------------- End of makeCrazyTurtle --#5.2
+  }
+  private void makeSpeedyTurtle()
+  {
+    Turtle speedyTurtle = new Turtle();
+    mtw.addAndShowTurtle(speedyTurtle);
+    speedyTurtle.setSpeed(10);
+    speedyTurtle.drawTriangle(100);
   }
 }
